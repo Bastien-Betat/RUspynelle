@@ -1,13 +1,14 @@
 <div id="<%= dom_id artist %>">
-  <p>
-    <strong>Pseudo:</strong>
-    <%= artist.pseudo %>
-  </p>
+  
+  <div class="card" style="width: 18rem;">
+  <img src="<%= artist.profilp %>" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title"><strong><%= artist.pseudo %></strong></h5>
+    <p class="card-text"><%= artist.description %></p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
 
-  <p>
-    <strong>Profilp:</strong>
-    <%= artist.profilp %>
-  </p>
 
   <p>
     <strong>Support:</strong>
@@ -21,17 +22,17 @@
 
   <p>
     <strong>Imagep:</strong>
-    <%= artist.imagep %>
+    <img src="<%= artist.imagep %>">
   </p>
 
   <p>
     <strong>Insta:</strong>
-    <%= artist.insta %>
+    <a href="<%= artist.insta %>"><%= artist.insta %></a>
   </p>
 
   <p>
     <strong>Link:</strong>
-    <%= artist.link %>
+    <a href="<%= artist.link %>"><%= artist.link %></a>
   </p>
 
 </div>
