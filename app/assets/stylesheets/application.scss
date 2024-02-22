@@ -14,3 +14,30 @@
  *= require_self
  */
 @import "bootstrap";
+
+#artists {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.card{
+    border: 3px black solid;
+ 
+}
+
+.centrageI{
+    display: flex!important;
+ 
+    margin-left:15%;
+    margin-right: 15%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    
+}
+.CentragePdP{
+
+    margin-top:10% ;
+    margin-bottom: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 3px black solid;
+}
