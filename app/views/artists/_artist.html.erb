@@ -1,38 +1,34 @@
+
 <div id="<%= dom_id artist %>">
-  
-  <div class="card" style="width: 18rem;">
-  <img src="<%= artist.profilp %>" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title"><strong><%= artist.pseudo %></strong></h5>
-    <p class="card-text"><%= artist.description %></p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
 
 
-  <p>
-    <strong>Support:</strong>
-    <%= artist.support %>
-  </p>
-
-  <p>
-    <strong>Description:</strong>
-    <%= artist.description %>
-  </p>
-
-  <p>
-    <strong>Imagep:</strong>
-    <img src="<%= artist.imagep %>">
-  </p>
-
-  <p>
+<div class="centrageI" >
+<div class="card mb-3" style="max-width: 100%;">
+  <div class="row g-0">
+    
+    <div class="col-md-4" style="height: 100%;" >
+    <div class="CentragePdP">
+      <img src="<%= artist.imagep %>" style="width:100%;">
+    </div>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title"><%= artist.pseudo %></h5>
+        <ul>
+        <p class="card-text"><%= artist.support %></p>
+        <p class="card-text"><%= artist.description %></p>
+        <p>
     <strong>Insta:</strong>
     <a href="<%= artist.insta %>"><%= artist.insta %></a>
-  </p>
+        </p>
 
-  <p>
+        <p>
     <strong>Link:</strong>
     <a href="<%= artist.link %>"><%= artist.link %></a>
-  </p>
-
+        </p>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
 </div>

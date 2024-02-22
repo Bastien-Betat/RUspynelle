@@ -2,12 +2,22 @@
 
 <h1>Artists</h1>
 
+
+
 <div id="artists">
+  
   <% @artists.each do |artist| %>
-    <%= render artist %>
-    <p>
-      <%= link_to "Show this artist", artist %>
-    </p>
+  <div class="col-lg-4">
+   
+      <div class="card" style="width: 18rem;">
+  <img src="<%= artist.profilp %>" class="card-img-top" alt="..." style="width: 100%;">
+  <div class="card-body">
+    <h5 class="card-title"><strong><%= artist.pseudo %></strong></h5>
+    <p class="card-text"><%= artist.description %></p>
+    <button type="button" class="btn btn-dark"><%= link_to "Show this artist", artist, class: "btn_show" %></button>
+  </div>
+</div>
+
   <% end %>
 </div>
 
