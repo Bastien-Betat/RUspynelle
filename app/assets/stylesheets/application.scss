@@ -25,10 +25,12 @@ html{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    
 }
 .card{
     border: 3px black solid;
     margin: 10px;
+
  
 }
 
@@ -100,4 +102,13 @@ footer {
     margin-right: 1%;
     align-content: space-between;
     
+}
+
+.img{
+    width: 100%
+}
+
+.centrageD{
+    margin-left: 10%;
+    margin-right: 5%;
 }
