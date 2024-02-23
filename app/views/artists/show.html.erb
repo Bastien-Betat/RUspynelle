@@ -2,9 +2,10 @@
 
 <%= render @artist %>
 
-<div>
-  <%= link_to "Edit this artist", edit_artist_path(@artist) %> |
-  <%= link_to "Back to artists", artists_path %>
-
-  <%= button_to "Destroy this artist", @artist, method: :delete %>
+<div class="buttonS3">
+  <button type="button" class="btn btn-dark"><%= link_to "Edit this artist", edit_artist_path(@artist) %></button>
+  <button type="button" class="btn btn-dark"><%= link_to "Back to artists", artists_path %></button>
+  <div class="buttonD">
+  <%= button_to "Delete this artist", @artist, method: :delete %>
+  </div>
 </div>
