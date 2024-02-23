@@ -5,8 +5,9 @@
 
 
 <div id="artists">
-  <div class="allignementC">
+     <div class="row">
   <% @artists.each do |artist| %>
+  <div class="col-lg-4">
   
    
       <div class="card" style="width: 18rem;">
@@ -15,7 +16,8 @@
     <h5 class="card-title"><strong><%= artist.pseudo %></strong></h5>
     <p class="card-text"><%= artist.description %></p>
     <button type="button" class="btn btn-dark"><%= link_to "Show this artist", artist, class: "btn_show" %></button>
-  
+    </div>
+    </div>
 </div>
 
 
