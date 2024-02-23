@@ -10,43 +10,57 @@
       </ul>
     </div>
   <% end %>
-
-  <div>
+  <div class="form-group" style="padding-left:10vw">
     <%= form.label :pseudo, style: "display: block" %>
-    <%= form.text_field :pseudo %>
-  </div>
+    <div class="col-md-6">
+    <%= form.text_field :pseudo, class: "form-control" %>
+  </div>  </div>
 
-  <div>
+
+  <div class="form-group" style="padding-left:10vw">
     <%= form.label :profilp, style: "display: block" %>
-    <%= form.text_area :profilp %>
-  </div>
+    <div class="col-md-6">
+    <%= form.text_area :profilp, class: "form-control" %>
+  </div>  </div>
 
-  <div>
+
+  <div class="form-group" style="padding-left:10vw">
     <%= form.label :support, style: "display: block" %>
-    <%= form.text_field :support %>
-  </div>
+    <div class="col-md-6">
+    <%= form.text_field :support, class: "form-control" %>
+  </div>  </div>
 
-  <div>
+
+  <div class="form-group" style="padding-left:10vw">
     <%= form.label :description, style: "display: block" %>
-    <%= form.text_area :description %>
-  </div>
+    <div class="col-md-6">
+    <%= form.text_area :description, class: "form-control" %>
+  </div>  </div>
 
-  <div>
+
+  <div class="form-group" style="padding-left:10vw">
     <%= form.label :imagep, style: "display: block" %>
-    <%= form.text_area :imagep %>
-  </div>
+    <div class="col-md-6">
+    <%= form.text_area :imagep, class: "form-control" %>
+  </div>  </div>
 
-  <div>
+
+  <div class="form-group" style="padding-left:10vw">
     <%= form.label :insta, style: "display: block" %>
-    <%= form.text_field :insta %>
-  </div>
+    <div class="col-md-6">
+    <%= form.text_field :insta, class: "form-control" %>
+  </div>  </div>
 
-  <div>
+
+  <div class="form-group" style="padding-left:10vw">
     <%= form.label :link, style: "display: block" %>
-    <%= form.text_field :link %>
+    <div class="col-md-6">
+    <%= form.text_field :link, class: "form-control" %>
+  </div>  </div>
+  <br>
+  <div style="padding-left:10vw">
+
+<%= form.submit class: "btn btn-primary" %>
   </div>
 
-  <div>
-    <%= form.submit %>
-  </div>
-<% end %>
+  <% end %>
