@@ -16,36 +16,57 @@
 @import "bootstrap";
 
 
-html{
+html {
     height: 100%;
     width: 100%;
+}
+
+.body {
+    color: #464646;
 }
 
 #artists {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    
+
 }
-.card{
+
+.card {
     border: 3px black solid;
-    margin: 10px;
-
- 
+    margin: 1vw;
+    width: 20vw;
+    min-height: 70vh;
+    transition: ease-in-out 0.3s;
 }
 
-.centrageI{
-    display: flex!important;
- 
-    margin-left:25%;
+.card:hover{
+    transform: scale(1.1)
+}
+
+.card-show {
+    border: 3px black solid;
+    margin: 1vw;
+
+}
+
+.card-img-top {
+    height: 40vh;
+}
+
+.centrageI {
+    display: flex !important;
+
+    margin-left: 25%;
     margin-right: 25%;
     margin-top: 10%;
     margin-bottom: 5%;
-    
-}
-.CentragePdP{
 
-    margin-top:10% ;
+}
+
+.CentragePdP {
+
+    margin-top: 10%;
     margin-bottom: 10%;
     margin-left: 10%;
     margin-right: 10%;
@@ -74,8 +95,8 @@ h1 {
 nav {
     width: 100%;
     text-align: left;
- }
- 
+}
+
 nav ul {
     padding-top: 20px;
 }
@@ -91,12 +112,12 @@ nav a {
     font-weight: bold;
 }
 
-.logo{
+.logo {
     width: 5%;
     height: 5%;
     margin-right: 10px;
- }
- 
+}
+
 footer {
 
     bottom: 0%;
@@ -107,48 +128,56 @@ footer {
     text-align: center;
 }
 
-.allignementC{
+.allignementC {
     display: flex;
     flex-direction: row;
     margin-left: 1%;
     margin-right: 1%;
     align-content: space-between;
-    
+
 }
 
-.img{
+.img {
     width: 100%
 }
 
-.centrageD{
-    margin-left: 15%;
-    margin-right: 5%;
+.centrageD {
+    margin-left: 1vw;
+    margin-right: 3vw;
 }
 
-.buttonS{
+.buttonS {
     margin-top: 5%;
     margin-left: 47%;
     margin-right: 20%;
     margin-bottom: 1%;
 }
 
-.buttonS2{
+.buttonS2 {
     margin-top: 5%;
     margin-left: 42%;
     margin-right: 20%;
     margin-bottom: 1%;
 }
 
-.buttonS3{
+.buttonS3 {
     margin-top: 5%;
     margin-left: 42%;
     margin-right: 20%;
     margin-bottom: 1%;
 }
 
-.buttonD{
+.buttonD {
     margin-top: 1%;
     margin-left: 10%;
     margin-right: 25%;
 }
 
+.bouton-show {
+    display: flex;
+    flex-direction: column;
+    -ms-flex-align: end;
+    text-align: end;
+    align-self: baseline;
+    bottom: 0px;
+}

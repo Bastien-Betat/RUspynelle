@@ -4,26 +4,22 @@
 
 
       <div class="centrageD">
-     <div class="row col-lg-12">
+<div class="row">
   <% @artists.each do |artist| %>
-
-  
-   
-      <div class="card" style="width: 18rem;" >
-  <img src="<%= artist.profilp %>" class="card-img-top" alt="..." style="width: 100%;">
-  <div class="card-body">
-    <h5 class="card-title"><strong><%= artist.pseudo %></strong></h5>
-    <p class="card-text"><%= artist.description %></p>
-    <button type="button" class="btn btn-dark"><%= link_to "Show this artist", artist, class: "btn_show" %></button>
+    <div class="col-lg-3">
+      <div class="card">
+        <img src="<%= artist.profilp %>" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title"><strong><%= artist.pseudo %></strong></h5>
+          <p class="card-text"><%= artist.description %></p>
+          <div class="bouton-show">
+          <%= link_to "Show this artist", artist, class: "btn btn-dark" %>
+        </div>
+        </div>
+      </div>
     </div>
-    </div>
-
-
-
-
-
   <% end %>
-  </div>
+</div>
   </div>
   <div class="buttonS">
     
