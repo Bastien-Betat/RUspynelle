@@ -38,6 +38,7 @@ html {
     width: 20vw;
     min-height: 70vh;
     transition: ease-in-out 0.3s;
+    box-shadow: 7px 5px 5px black;
 }
 
 .card:hover{
@@ -52,6 +53,8 @@ html {
 
 .card-img-top {
     height: 40vh;
+    
+    background-color: black;
 }
 
 .centrageI {
