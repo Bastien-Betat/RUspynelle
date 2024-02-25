@@ -32,6 +32,8 @@ html {
 .card-show {
     border: 3px black solid;
     margin: 1vw;
+    border-radius: 10px;
+    background-color:rgba(240, 240, 240, 0.966);
 
 }
 
@@ -101,13 +103,21 @@ nav a {
 
 a {
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
+}
+
+.DecoB{
+    color: rgb(36, 39, 211);
 }
 
 .logo {
     width: 5%;
     height: 5%;
     margin-right: 10px;
+}
+
+.ColorsS{
+    color: blue ;
 }
 
 footer {
